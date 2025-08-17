@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { LumaMascot } from "@/components/luma-mascot"
-// 
+import { updateGameProgress } from "@/lib/progress"
 import { Mail, ArrowRight, RotateCcw, AlertTriangle, CheckCircle, HelpCircle } from "lucide-react"
 
 interface SuspiciousElement {
@@ -219,10 +219,12 @@ Microsoft Security Team`,
       setCurrentEmailIndex(currentEmailIndex + 1)
       setSelectedElements([])
       setShowResults(false)
-      setScore(0)
-      setHintsUsed(0)
     } else {
       setGameComplete(true)
+      updateGameProgress("phisher", "game1", {
+        completed: true,
+        score: totalScore,
+      })
     }
   }
 

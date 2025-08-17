@@ -4,6 +4,7 @@ import React from "react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import { updateGameProgress } from "@/lib/progress"
 import { Card, CardContent } from "@/components/ui/card"
 import { Eye, ArrowRight, Mail, Link, AlertTriangle, Target, Shield, Trophy } from "lucide-react"
 
@@ -61,6 +62,7 @@ export default function PhisherIntroPage() {
   ]
 
   const handleStart = () => {
+    updateGameProgress("phisher", "intro", { completed: true })
     router.push("/missions/phisher/game-1")
   }
 
