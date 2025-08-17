@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { LumaMascot } from "@/components/luma-mascot"
 import { MessageCircle, ArrowRight, RotateCcw, Shield, AlertTriangle } from "lucide-react"
+import { updateGameProgress } from "@/lib/progress"
 
 interface Step {
   id: string
@@ -182,9 +183,10 @@ export default function PhisherBossPage() {
 
   const handleContinue = () => {
     // Save boss progress
-    const progress = JSON.parse(localStorage.getItem("digitalDefendersProgress") || "{}")
-    progress.phisher = { ...progress.phisher, bossScore: score, bossComplete: true }
-    localStorage.setItem("digitalDefendersProgress", JSON.stringify(progress))
+    updateGameProgress("phisher", "boss", {
+      completed: true,
+      score: score,
+    })
 
     router.push("/missions/phisher/debrief")
   }

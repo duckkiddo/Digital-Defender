@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { LumaMascot } from "@/components/luma-mascot"
 import { Zap, Target, ArrowRight, RotateCcw } from "lucide-react"
+import { updateGameProgress } from "@/lib/progress"
 
 interface GameItem {
   id: string
@@ -143,11 +144,10 @@ export default function MindFogGame2Page() {
   }, [gameActive, generateItem])
 
   const handleContinue = () => {
-    // Save game 2 progress
-    const progress = JSON.parse(localStorage.getItem("digitalDefendersProgress") || "{}")
-    progress.mindfog = { ...progress.mindfog, game2Score: score, game2Complete: true }
-    localStorage.setItem("digitalDefendersProgress", JSON.stringify(progress))
-
+    updateGameProgress("mindfog", "game2", {
+      completed: true,
+      score: score,
+    })
     router.push("/missions/mindfog/boss")
   }
 

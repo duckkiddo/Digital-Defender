@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight, Play, Target, Clock, Award } from "lucide-react"
+import { updateGameProgress } from "@/lib/progress"
 
 export default function MindFogIntroPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -90,6 +91,7 @@ export default function MindFogIntroPage() {
   }
 
   const startMission = () => {
+    updateGameProgress("mindfog", "intro", { completed: true });
     router.push(`/missions/mindfog/game-1`)
   }
 

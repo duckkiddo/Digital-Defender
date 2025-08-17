@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { LumaMascot } from "@/components/luma-mascot"
 import { Progress } from "@/components/ui/progress"
 import { Heart, Zap, ArrowRight, RotateCcw, Clock } from "lucide-react"
+import { updateGameProgress } from "@/lib/progress"
 
 interface Choice {
   id: string
@@ -196,7 +197,11 @@ export default function MindFogBossPage() {
         setSelectedChoice(null)
         setTimeLeft(5)
       } else {
-        endGame()
+        updateGameProgress("mindfog", "boss", {
+  completed: true,
+  score: score,
+})
+endGame()
       }
     }, 2000)
   }
