@@ -1,0 +1,87 @@
+[
+  {
+    "id": "digital-safety",
+    "title": "Digital Safety & Security",
+    "icon": "Shield",
+    "color": "bg-blue-500",
+    "videos": [
+      {
+        "title": "How to make passwords more secure",
+        "description": "Learn more about threat management and passwordless security.",
+        "duration": "3:00",
+        "level": "Beginner",
+        "thumbnail": "https://img.youtube.com/vi/xUp5S0nBnfc/maxresdefault.jpg",
+        "youtubeId": "xUp5S0nBnfc",
+        "category": "Digital Safety & Security"
+      }
+    ]
+  },
+  {
+    "id": "social-media",
+    "title": "Social Media Awareness",
+    "icon": "Users",
+    "color": "bg-green-500",
+    "videos": [
+      {
+        "title": "Privacy Settings Deep Dive",
+        "description": "A detailed look into privacy settings on popular platforms.",
+        "duration": "14 min",
+        "level": "Advanced",
+        "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+        "youtubeId": "dQw4w9WgXcQ",
+        "category": "Online Privacy"
+      }
+    ]
+  },
+  {
+    "id": "screen-time",
+    "title": "Screen Time & Digital Wellness",
+    "icon": "Smartphone",
+    "color": "bg-purple-500",
+    "videos": [
+      {
+        "title": "Healthy Screen Time Habits",
+        "description": "Building balanced relationships with technology",
+        "duration": "11:00",
+        "level": "All Levels",
+        "thumbnail": "https://img.youtube.com/vi/37WJeXxZ1BY/maxresdefault.jpg",
+        "youtubeId": "37WJeXxZ1BY",
+        "category": "Screen Time & Digital Wellness"
+      }
+    ]
+  },
+  {
+    "id": "ai-deepfakes",
+    "title": "AI & Deepfakes",
+    "icon": "Brain",
+    "color": "bg-orange-500",
+    "videos": [
+      {
+        "title": "Understanding Deepfakes",
+        "description": "What are deepfakes and how are they created?",
+        "duration": "14:30",
+        "level": "Intermediate",
+        "thumbnail": "https://img.youtube.com/vi/IOyrbsNcXt8/maxresdefault.jpg",
+        "youtubeId": "IOyrbsNcXt8",
+        "category": "AI & Deepfakes"
+      }
+    ]
+  },
+  {
+    "id": "online-privacy",
+    "title": "Online Privacy & Data Protection",
+    "icon": "Eye",
+    "color": "bg-red-500",
+    "videos": [
+      {
+        "title": "Understanding Data Collection",
+        "description": "How companies collect and use your personal data",
+        "duration": "10:20",
+        "level": "Beginner",
+        "thumbnail": "https://i.ytimg.com/vi/Coe0N2xb8kk/maxresdefault.jpg",
+        "youtubeId": "Coe0N2xb8kk",
+        "category": "Online Privacy & Data Protection"
+      }
+    ]
+  }
+]

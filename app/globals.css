@@ -1,0 +1,273 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Digital Defenders Fun Color Palette */
+  --background: oklch(0.99 0.01 120);
+  --foreground: oklch(0.15 0.02 280);
+  --card: oklch(0.98 0.01 120);
+  --card-foreground: oklch(0.15 0.02 280);
+  --popover: oklch(0.98 0.01 120);
+  --popover-foreground: oklch(0.15 0.02 280);
+
+  /* Primary: Bright Fun Blue #3B82F6 */
+  --primary: oklch(0.65 0.25 250);
+  --primary-foreground: oklch(0.98 0.01 120);
+
+  /* Success: Vibrant Green #10B981 */
+  --success: oklch(0.7 0.18 160);
+  --success-foreground: oklch(0.98 0.01 120);
+
+  /* Warning: Warm Orange #F97316 */
+  --warning: oklch(0.75 0.2 50);
+  --warning-foreground: oklch(0.15 0.02 280);
+
+  /* Danger: Bright Red #EF4444 */
+  --destructive: oklch(0.6 0.25 25);
+  --destructive-foreground: oklch(0.98 0.01 120);
+
+  /* Added fun purple and pink accents */
+  --secondary: oklch(0.85 0.08 300);
+  --secondary-foreground: oklch(0.15 0.02 280);
+  --muted: oklch(0.94 0.02 280);
+  --muted-foreground: oklch(0.5 0.05 280);
+  --accent: oklch(0.8 0.15 320);
+  --accent-foreground: oklch(0.15 0.02 280);
+  --border: oklch(0.88 0.03 280);
+  --input: oklch(0.95 0.02 280);
+  --ring: oklch(0.65 0.25 250);
+
+  /* Updated chart colors to be more vibrant and fun */
+  --chart-1: oklch(0.65 0.25 250); /* Bright Blue */
+  --chart-2: oklch(0.7 0.18 160); /* Vibrant Green */
+  --chart-3: oklch(0.75 0.2 50); /* Warm Orange */
+  --chart-4: oklch(0.7 0.2 320); /* Fun Purple */
+  --chart-5: oklch(0.75 0.2 350); /* Cheerful Pink */
+
+  --radius: 0.75rem;
+  --sidebar: oklch(0.97 0.01 280);
+  --sidebar-foreground: oklch(0.15 0.02 280);
+  --sidebar-primary: oklch(0.65 0.25 250);
+  --sidebar-primary-foreground: oklch(0.98 0.01 120);
+  --sidebar-accent: oklch(0.85 0.08 300);
+  --sidebar-accent-foreground: oklch(0.15 0.02 280);
+  --sidebar-border: oklch(0.88 0.03 280);
+  --sidebar-ring: oklch(0.65 0.25 250);
+}
+
+.dark {
+  /* Dark mode with vibrant accents */
+  --background: oklch(0.15 0.05 240);
+  --foreground: oklch(0.95 0.01 120);
+  --card: oklch(0.15 0.05 240);
+  --card-foreground: oklch(0.95 0.01 120);
+  --popover: oklch(0.15 0.02 280);
+  --popover-foreground: oklch(0.95 0.01 120);
+
+  /* Primary: Bright Blue in dark mode */
+  --primary: oklch(0.7 0.25 250);
+  --primary-foreground: oklch(0.12 0.02 280);
+
+  --secondary: oklch(0.25 0.05 300);
+  --secondary-foreground: oklch(0.95 0.01 120);
+  --muted: oklch(0.22 0.03 280);
+  --muted-foreground: oklch(0.7 0.02 280);
+  --accent: oklch(0.35 0.12 320);
+  --accent-foreground: oklch(0.95 0.01 120);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.95 0.01 120);
+  --border: oklch(0.25 0.03 280);
+  --input: oklch(0.22 0.03 280);
+  --ring: oklch(0.7 0.25 250);
+
+  /* Vibrant chart colors for dark mode */
+  --chart-1: oklch(0.7 0.25 250); /* Bright Blue */
+  --chart-2: oklch(0.75 0.18 160); /* Vibrant Green */
+  --chart-3: oklch(0.8 0.2 50); /* Warm Orange */
+  --chart-4: oklch(0.75 0.2 320); /* Fun Purple */
+  --chart-5: oklch(0.8 0.2 350); /* Cheerful Pink */
+
+  --sidebar: oklch(0.18 0.02 280);
+  --sidebar-foreground: oklch(0.95 0.01 120);
+  --sidebar-primary: oklch(0.7 0.25 250);
+  --sidebar-primary-foreground: oklch(0.12 0.02 280);
+  --sidebar-accent: oklch(0.25 0.05 300);
+  --sidebar-accent-foreground: oklch(0.95 0.01 120);
+  --sidebar-border: oklch(0.25 0.03 280);
+  --sidebar-ring: oklch(0.7 0.25 250);
+}
+
+@theme inline {
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+/* Custom utility classes for Digital Defenders */
+@layer utilities {
+  .text-success {
+    color: var(--color-success);
+  }
+  .text-warning {
+    color: var(--color-warning);
+  }
+  .bg-success {
+    background-color: var(--color-success);
+  }
+  .bg-warning {
+    background-color: var(--color-warning);
+  }
+  .border-success {
+    border-color: var(--color-success);
+  }
+  .border-warning {
+    border-color: var(--color-warning);
+  }
+}
+
+/* Accessibility features */
+@layer utilities {
+  /* High contrast mode */
+  .high-contrast {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0 0 0);
+    --primary: oklch(0 0 0);
+    --primary-foreground: oklch(1 0 0);
+    --secondary: oklch(0.9 0 0);
+    --secondary-foreground: oklch(0 0 0);
+    --muted: oklch(0.9 0 0);
+    --muted-foreground: oklch(0.2 0 0);
+    --border: oklch(0 0 0);
+    --input: oklch(1 0 0);
+  }
+
+  .high-contrast.dark {
+    --background: oklch(0 0 0);
+    --foreground: oklch(1 0 0);
+    --card: oklch(0 0 0);
+    --card-foreground: oklch(1 0 0);
+    --primary: oklch(1 0 0);
+    --primary-foreground: oklch(0 0 0);
+    --secondary: oklch(0.1 0 0);
+    --secondary-foreground: oklch(1 0 0);
+    --muted: oklch(0.1 0 0);
+    --muted-foreground: oklch(0.8 0 0);
+    --border: oklch(1 0 0);
+    --input: oklch(0 0 0);
+  }
+
+  /* Reduced motion */
+  .reduce-motion *,
+  .reduce-motion *::before,
+  .reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Screen reader mode enhancements */
+  .screen-reader-mode {
+    --radius: 0px;
+  }
+
+  .screen-reader-mode * {
+    border-radius: 0 !important;
+  }
+
+  .screen-reader-mode button,
+  .screen-reader-mode a,
+  .screen-reader-mode input,
+  .screen-reader-mode select {
+    outline: 2px solid var(--color-primary) !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Focus indicators for keyboard navigation */
+  .keyboard-navigation button:focus-visible,
+  .keyboard-navigation a:focus-visible,
+  .keyboard-navigation input:focus-visible,
+  .keyboard-navigation select:focus-visible,
+  .keyboard-navigation [tabindex]:focus-visible {
+    outline: 3px solid var(--color-primary) !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.2) !important;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
+}
