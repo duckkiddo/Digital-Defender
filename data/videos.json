@@ -8,10 +8,19 @@
       {
         "title": "How to make passwords more secure",
         "description": "Learn more about threat management and passwordless security.",
-        "duration": "3:00",
+        "duration": "2:56",
         "level": "Beginner",
         "thumbnail": "https://img.youtube.com/vi/xUp5S0nBnfc/maxresdefault.jpg",
         "youtubeId": "xUp5S0nBnfc",
+        "category": "Digital Safety & Security"
+      },
+      {
+        "title": "Cyber Safety Tips to be Secured",
+        "description": "Practical tips on how to secure your home network and devices, covering everything from passwords to malware scans.",
+        "duration": "3:19",
+        "level": "Beginner",
+        "thumbnail": "https://img.youtube.com/vi/CyVw1GEQv7E/hqdefault.jpg",
+        "youtubeId": "CyVw1GEQv7E",
         "category": "Digital Safety & Security"
       }
     ]
@@ -23,14 +32,23 @@
     "color": "bg-green-500",
     "videos": [
       {
-        "title": "Privacy Settings Deep Dive",
-        "description": "A detailed look into privacy settings on popular platforms.",
-        "duration": "14 min",
-        "level": "Advanced",
-        "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        "youtubeId": "dQw4w9WgXcQ",
-        "category": "Online Privacy"
-      }
+        "title": "Don't Destroy Your Children's Life !!! ",
+        "description": "A powerful short film that shows the dangers of sharing photos and personal information online, highlighting the risks of identity theft and bullying.",
+        "duration": "2:49",
+        "level": "Beginner",
+        "thumbnail": "https://img.youtube.com/vi/F4WZ_k0vUDM/hqdefault.jpg",
+        "youtubeId": "F4WZ_k0vUDM",
+        "category": "Social Media Awareness"
+      },
+      {
+      "title": "Are You Living an Insta Lie? Social Media Vs. Reality",
+      "description": "A powerful video that highlights the difference between curated social media lives and real life.",
+      "duration": "3:13",
+      "level": "Beginner",
+      "thumbnail": "https://img.youtube.com/vi/0EFHbruKEmw/hqdefault.jpg",
+      "youtubeId": "0EFHbruKEmw",
+      "category": "Social Media Awareness"
+      }      
     ]
   },
   {
@@ -42,11 +60,20 @@
       {
         "title": "Healthy Screen Time Habits",
         "description": "Building balanced relationships with technology",
-        "duration": "11:00",
+        "duration": "1:01",
         "level": "All Levels",
         "thumbnail": "https://img.youtube.com/vi/37WJeXxZ1BY/maxresdefault.jpg",
         "youtubeId": "37WJeXxZ1BY",
         "category": "Screen Time & Digital Wellness"
+      },
+      {
+        "title": "Staring At A Screen All Day, Will Damage Your Brain ?",
+        "description": "An animated video that explains the effects of excessive screen time on your brain and body, including computer vision syndrome, vision problems, and sleep disruption.",
+        "duration": "3:38",
+        "level": "Beginner",
+        "thumbnail": "https://img.youtube.com/vi/rx1l51qxGbQ/hqdefault.jpg",
+        "youtubeId": "rx1l51qxGbQ",
+        "category": "Screen Time & Mental Health"
       }
     ]
   },
@@ -59,10 +86,28 @@
       {
         "title": "Understanding Deepfakes",
         "description": "What are deepfakes and how are they created?",
-        "duration": "14:30",
+        "duration": "5:30",
         "level": "Intermediate",
         "thumbnail": "https://img.youtube.com/vi/IOyrbsNcXt8/maxresdefault.jpg",
         "youtubeId": "IOyrbsNcXt8",
+        "category": "AI & Deepfakes"
+      },
+      {
+        "title": "AI won't kill us all — but that doesn't make it trustworthy.",
+        "description": "A talk that discusses the real dangers of AI, such as environmental costs, copyright issues, and bias, and how they impact society.",
+        "duration": "10:19",
+        "level": "Intermediate",
+        "thumbnail": "https://img.youtube.com/vi/eXdVDhOGqoE/hqdefault.jpg",
+        "youtubeId": "eXdVDhOGqoE",
+        "category": "AI & Deepfakes"
+      },
+      {
+        "title": "The Good side of Deepfakes ",
+        "description": "A video that explores the positive uses of deepfake technology, including democratizing human digitization, improving visual effects, and bridging language barriers.",
+        "duration": "4:49",
+        "level": "Beginner",
+        "thumbnail": "https://img.youtube.com/vi/Nn99WfK9PIk/hqdefault.jpg",
+        "youtubeId": "Nn99WfK9PIk",
         "category": "AI & Deepfakes"
       }
     ]
@@ -74,9 +119,18 @@
     "color": "bg-red-500",
     "videos": [
       {
+        "title": "Targeted Ads: How Your Data is Sold !!!",
+        "description": "An educational video that explains how companies like Facebook use your personal data, from your profile information to your location and social interactions, to create targeted advertisements.",
+        "duration": "5:10",
+        "level": "Intermediate",
+        "thumbnail": "https://img.youtube.com/vi/yVwKQqbMw-c/hqdefault.jpg",
+        "youtubeId": "yVwKQqbMw-c",
+        "category": "Online Privacy & Data Protection"
+      },
+      {
         "title": "Understanding Data Collection",
         "description": "How companies collect and use your personal data",
-        "duration": "10:20",
+        "duration": "6:44",
         "level": "Beginner",
         "thumbnail": "https://i.ytimg.com/vi/Coe0N2xb8kk/maxresdefault.jpg",
         "youtubeId": "Coe0N2xb8kk",
