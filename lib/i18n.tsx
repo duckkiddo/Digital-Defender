@@ -55,6 +55,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'join-thousands': 'Join thousands of young people who have already leveled up their digital literacy skills. Your journey starts now.',
     'begin-training': 'Begin Your Training',
     certificate: 'Certificate',
+    chat: 'Chat',
   },
   ar: {
     home: 'الرئيسية',
@@ -95,6 +96,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'join-thousands': 'انضم إلى الآلاف من الشباب الذين قاموا بالفعل برفع مستوى مهاراتهم في محو الأمية الرقمية. رحلتك تبدأ الآن.',
     'begin-training': 'ابدأ تدريبك',
     certificate: 'الشهادة',
+    chat: 'الدردشة',
   },
   zh: {
       home: '首页',
@@ -135,6 +137,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
       'join-thousands': '加入成千上万已经提升数字素养技能的年轻人。你的旅程现在开始。',
       'begin-training': '开始你的训练',
     certificate: '证书',
+    chat: '聊天',
     },
   es: {
     home: 'Inicio',
@@ -175,6 +178,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'join-thousands': 'Únete a miles de jóvenes que ya han mejorado sus habilidades de alfabetización digital. Tu viaje comienza ahora.',
     'begin-training': 'Comienza tu entrenamiento',
     certificate: 'Certificado',
+    chat: 'Chat',
   },
   hi: {
     home: 'होम',

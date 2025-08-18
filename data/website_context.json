@@ -1,0 +1,36 @@
+{
+  "name": "Digital Defender",
+  "what_is_this_website": "\"Digital Defenders\" is an interactive digital literacy platform, like a mini \"choose your own adventure.\" It helps users improve digital wellbeing through quick, gamified missions. The focus is on healthy screen habits, spotting scams, and identifying AI-generated misinformation in short, engaging modules.",
+  "why_was_it_created": "The site was built to give people, especially young audiences, practical digital skills in a fun and safe way.",
+  "youth_led_design": "Created with input from young people so it feels relatable.",
+  "privacy_first": "No tracking or account needed, all data stays on your device.",
+  "skill_building": "Provides useful lessons and certificates to encourage learning.",
+  "key_features_and_learning_paths": [
+    {
+      "mission": "MindFog Mission (Focus Champion)",
+      "goal": "Learn to manage screen time and protect mental well-being.",
+      "duration": "5–7 minutes"
+    },
+    {
+      "mission": "Phisher Hunt (Scam Spotter)",
+      "goal": "Spot phishing emails, fake websites, and scams.",
+      "duration": "5–7 minutes"
+    },
+    {
+      "mission": "AI Truth Hunter (Truth Detective)",
+      "goal": "Detect AI fakes, deepfakes, and misinformation.",
+      "duration": "6–8 minutes"
+    }
+  ],
+  "extra_highlights": [
+    "Earn certificates after completing missions.",
+    "Option to switch languages and themes.",
+    "Easy navigation with clear tabs for Home, About, Videos, and Certificate."
+  ],
+  "lessons_you_will_find": [
+    "Digital Well-Being: Build healthier screen-time habits.",
+    "Scam Awareness: Learn to recognize and avoid phishing.",
+    "Misinformation Literacy: Understand how to evaluate media and spot AI-generated content.",
+    "Safe Learning: No personal data is collected."
+  ]
+}
