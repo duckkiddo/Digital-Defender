@@ -13,6 +13,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="text-center py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
+          
+          
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center">
               <Shield className="w-10 h-10 text-primary-foreground" />
@@ -43,13 +45,14 @@ export default function HomePage() {
       </section>
 
       {/* Mission Preview Cards */}
-      <section className="mb-16">
+      <section id="learning-paths" className="mb-16">
         <h2 className="text-3xl font-heading font-bold text-center mb-12">{t('choose-learning-path')}</h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* MindFog Mission */}
           <Card className="rounded-2xl border-2 hover:border-primary/50 transition-colors group cursor-pointer">
             <CardHeader className="text-center pb-4">
+              
               <div className="w-16 h-16 bg-success/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-success/30 transition-colors">
                 <Brain className="w-8 h-8 text-success" />
               </div>
@@ -79,6 +82,7 @@ export default function HomePage() {
           {/* Phisher Hunt Mission */}
           <Card className="rounded-2xl border-2 hover:border-primary/50 transition-colors group cursor-pointer">
             <CardHeader className="text-center pb-4">
+              
               <div className="w-16 h-16 bg-warning/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-warning/30 transition-colors">
                 <Eye className="w-8 h-8 text-warning" />
               </div>
@@ -108,6 +112,7 @@ export default function HomePage() {
           {/* AI Truth Hunter Mission */}
           <Card className="rounded-2xl border-2 hover:border-primary/50 transition-colors group cursor-pointer">
             <CardHeader className="text-center pb-4">
+              
               <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-500/30 transition-colors">
                 <Search className="w-8 h-8 text-purple-500" />
               </div>
@@ -183,6 +188,7 @@ export default function HomePage() {
           <Link href="/mission-control">{t('begin-training')}</Link>
         </Button>
       </section>
+
     </div>
   )
 }

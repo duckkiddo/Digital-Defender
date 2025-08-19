@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { LumaMascot } from "@/components/luma-mascot"
-// 
+import AnimatedLuma from "@/components/animated-luma"
+import { updateGameProgress } from "@/lib/progress"
 import { Mail, ArrowRight, RotateCcw, AlertTriangle, CheckCircle, HelpCircle } from "lucide-react"
 
 interface SuspiciousElement {
@@ -34,6 +35,8 @@ export default function PhisherGame1Page() {
   const [hintsUsed, setHintsUsed] = useState(0)
   const [gameComplete, setGameComplete] = useState(false)
   const [totalScore, setTotalScore] = useState(0)
+  const [showMascotCelebration, setShowMascotCelebration] = useState(false)
+  const [celebrationMessage, setCelebrationMessage] = useState("")
 
   const emails: Email[] = [
     {
@@ -212,6 +215,26 @@ Microsoft Security Team`,
     setScore(emailScore)
     setTotalScore((prev) => prev + emailScore)
     setShowResults(true)
+
+    // Show mascot celebration based on performance
+    if (emailScore >= 30) {
+      setCelebrationMessage("🎉 Amazing! You're a phishing detection expert!")
+      setShowMascotCelebration(true)
+      setTimeout(() => setShowMascotCelebration(false), 4000)
+    } else if (emailScore >= 20) {
+      setCelebrationMessage("🌟 Great job! You caught most of the red flags!")
+      setShowMascotCelebration(true)
+      setTimeout(() => setShowMascotCelebration(false), 4000)
+    } else if (emailScore >= 10) {
+      setCelebrationMessage("👍 Good work! Keep practicing to improve!")
+      setShowMascotCelebration(true)
+      setTimeout(() => setShowMascotCelebration(false), 4000)
+    } else {
+      // Show crying mascot for low scores
+      setCelebrationMessage("😢 Don't worry! Let's try again together!")
+      setShowMascotCelebration(true)
+      setTimeout(() => setShowMascotCelebration(false), 4000)
+    }
   }
 
   const handleNextEmail = () => {
@@ -219,10 +242,12 @@ Microsoft Security Team`,
       setCurrentEmailIndex(currentEmailIndex + 1)
       setSelectedElements([])
       setShowResults(false)
-      setScore(0)
-      setHintsUsed(0)
     } else {
       setGameComplete(true)
+      updateGameProgress("phisher", "game1", {
+        completed: true,
+        score: totalScore,
+      })
     }
   }
 
@@ -266,6 +291,17 @@ Microsoft Security Team`,
                   <Mail className="w-10 h-10 text-warning" />
                 </div>
                 <h2 className="text-2xl font-heading font-bold mb-4">Email Analysis Complete!</h2>
+                
+                {/* Game completion mascot */}
+                <div className="mb-6">
+                  <AnimatedLuma
+                    emotion={totalScore >= 200 ? "dancing" : totalScore >= 150 ? "celebrating" : "proud"}
+                    message={totalScore >= 200 ? "🎉 Mission accomplished! You're a phishing detection master!" : totalScore >= 150 ? "🌟 Excellent work! You're becoming a digital defender!" : "🎯 Good job! Keep practicing to improve your skills!"}
+                    size="large"
+                    autoAnimate
+                    className="mx-auto"
+                  />
+                </div>
                 <div className="max-w-md mx-auto mb-6">
                   <p className="text-3xl font-bold text-warning mb-2">{totalScore}</p>
                   <p className="text-muted-foreground">Total Score</p>
@@ -341,6 +377,24 @@ Microsoft Security Team`,
             />
           )}
 
+          {/* Mascot Celebration */}
+          {showMascotCelebration && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm">
+              <div className="bg-background rounded-2xl p-8 shadow-2xl border-2 border-primary/20 max-w-md mx-4">
+                <div className="text-center">
+                  <AnimatedLuma
+                    emotion={score >= 30 ? "dancing" : score >= 20 ? "celebrating" : score >= 10 ? "happy" : "crying"}
+                    message={celebrationMessage}
+                    size="large"
+                    autoAnimate
+                    className="mb-2"
+                  />
+                  <Button onClick={() => setShowMascotCelebration(false)} className="mt-4 bg-primary hover:bg-primary/90">Continue</Button>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Email Display */}
             <Card className="rounded-2xl">
@@ -414,6 +468,19 @@ Microsoft Security Team`,
                     <p className="text-sm text-muted-foreground">
                       Selected {selectedElements.length} suspicious elements
                     </p>
+                    
+                    {/* Encouraging mascot during selection */}
+                    {selectedElements.length > 0 && (
+                      <div className="mb-4">
+                        <AnimatedLuma
+                          emotion={selectedElements.length >= 3 ? "happy" : "focused"}
+                          size="medium"
+                          message={selectedElements.length >= 3 ? "🎯 Great detective work! You're spotting lots of red flags!" : "🔍 Good eye! Keep looking for more suspicious elements!"}
+                          className="mx-auto"
+                          autoAnimate
+                        />
+                      </div>
+                    )}
                     <div className="space-y-2">
                       {selectedElements.map((elementId) => {
                         const element = currentEmail.elements.find((el) => el.id === elementId)
@@ -438,6 +505,17 @@ Microsoft Security Team`,
                     <div className="text-center mb-4">
                       <p className="text-2xl font-bold text-warning">{score}</p>
                       <p className="text-sm text-muted-foreground">Points earned</p>
+                      
+                      {/* Small encouraging mascot */}
+                      <div className="mt-4">
+                        <AnimatedLuma
+                          emotion={score >= 30 ? "dancing" : score >= 20 ? "proud" : "happy"}
+                          size="small"
+                          message={score >= 30 ? "🏆 Perfect score!" : score >= 20 ? "⭐ Well done!" : "💪 Keep going!"}
+                          className="mx-auto"
+                          autoAnimate
+                        />
+                      </div>
                     </div>
 
                     <div className="space-y-3">

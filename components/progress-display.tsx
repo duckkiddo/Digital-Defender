@@ -141,6 +141,10 @@ export function ProgressDisplay({ showDetailed = false }: ProgressDisplayProps) 
                   <Progress value={mindfogProgress} className="h-2" />
                 </div>
                 <div className="flex justify-between text-sm">
+                  <span>Mission Intro</span>
+                  <span>{progress.mindfog.intro.completed ? "✓" : "○"}</span>
+                </div>
+                <div className="flex justify-between text-sm">
                   <span>Daily Balance Puzzle</span>
                   <span>{progress.mindfog.game1.completed ? "✓" : "○"}</span>
                 </div>
@@ -170,6 +174,10 @@ export function ProgressDisplay({ showDetailed = false }: ProgressDisplayProps) 
                     <span className="font-medium">{phisherProgress}%</span>
                   </div>
                   <Progress value={phisherProgress} className="h-2" />
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span>Mission Intro</span>
+                  <span>{progress.phisher.intro.completed ? "✓" : "○"}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span>Email Analysis</span>
@@ -203,7 +211,11 @@ export function ProgressDisplay({ showDetailed = false }: ProgressDisplayProps) 
                   <Progress value={aitruthProgress} className="h-2" />
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span>Deepfake Detection</span>
+                  <span>Mission Intro</span>
+                  <span>{progress.aitruth.intro.completed ? "✓" : "○"}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span>Fact Checker</span>
                   <span>{progress.aitruth.game1.completed ? "✓" : "○"}</span>
                 </div>
                 <div className="flex justify-between text-sm">

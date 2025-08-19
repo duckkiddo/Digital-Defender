@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import { updateGameProgress } from "@/lib/progress"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight, Play, Target, Clock, Award } from "lucide-react"
 
@@ -90,6 +91,7 @@ export default function AITruthIntroPage() {
   }
 
   const startMission = () => {
+    updateGameProgress("aitruth", "intro", { completed: true })
     router.push("/missions/aitruth/game-1")
   }
 

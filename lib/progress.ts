@@ -189,7 +189,7 @@ export function getMissionProgress(mission: "mindfog" | "phisher" | "aitruth"): 
   const progress = getProgress()
   const missionData = progress[mission]
 
-  const games = ["game1", "game2", "boss", "debrief"]
+  const games = ["intro", "game1", "game2", "boss", "debrief"]
   const completed = games.filter((gameKey) => {
     const game = missionData[gameKey as keyof MissionProgress];
     return typeof game === "object" && game !== null && "completed" in game && (game as GameProgress).completed;

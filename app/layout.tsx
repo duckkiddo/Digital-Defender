@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
 import { LanguageProvider } from "@/lib/i18n"
 import { Footer } from "@/components/footer"
+import GlobalChat from "@/components/global-chat"
 import "./globals.css"
 
 const poppins = Poppins({
@@ -39,6 +40,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Navigation />
             <main className="container mx-auto px-4 min-h-screen">{children}</main>
+            <GlobalChat />
             <Footer />
           </ThemeProvider>
         </LanguageProvider>

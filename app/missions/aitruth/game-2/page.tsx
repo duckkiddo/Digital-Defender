@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
-
+  
 import {
   Newspaper,
   CheckCircle,
@@ -267,6 +267,13 @@ export default function FakeNewsSpottingGame() {
                 <CardTitle className="text-2xl font-heading">Ready to Spot Fake News?</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-6">
+                <AnimatedLuma
+                  emotion="happy"
+                  message="📰 Look for red flags: sensational claims, no sources, and urgency."
+                  size="medium"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <p className="text-lg text-muted-foreground">
                   You'll analyze {articles.length} news articles and determine which are credible and which are fake or
                   misleading.
@@ -353,6 +360,16 @@ export default function FakeNewsSpottingGame() {
                     <p className="text-muted-foreground leading-relaxed">{currentArticleData.content}</p>
                   </div>
 
+                  <div className="text-center mb-2">
+                    <AnimatedLuma
+                      emotion={showAnalysis ? "focused" : "happy"}
+                      message={showAnalysis ? "🧠 Use analysis tools to verify claims." : "🤔 Trust but verify!"}
+                      size="medium"
+                      autoAnimate
+                      className="mx-auto"
+                    />
+                  </div>
+
                   {/* Analysis Tools */}
                   <div className="mb-6">
                     <Button onClick={() => setShowAnalysis(!showAnalysis)} variant="outline" className="mb-4">
@@ -429,6 +446,13 @@ export default function FakeNewsSpottingGame() {
           {gameState === "feedback" && (
             <Card className="rounded-3xl border-2 border-destructive/20">
               <CardContent className="p-8 text-center space-y-6">
+                <AnimatedLuma
+                  emotion={userAnswers[currentArticle] ? "celebrating" : "worried"}
+                  message={userAnswers[currentArticle] ? "🎉 Great analysis!" : "💡 Look at the red flags we highlighted."}
+                  size="medium"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <div
                   className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto ${
                     userAnswers[currentArticle] ? "bg-success/20" : "bg-destructive/20"

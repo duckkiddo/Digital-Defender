@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { LumaMascot } from "@/components/luma-mascot"
+import AnimatedLuma from "@/components/animated-luma"
 import { Link, ArrowRight, RotateCcw, Shield, AlertTriangle, CheckCircle } from "lucide-react"
+import { updateGameProgress } from "@/lib/progress"
 
 interface Website {
   id: string
@@ -131,9 +132,10 @@ export default function PhisherGame2Page() {
 
   const handleContinue = () => {
     // Save game 2 progress
-    const progress = JSON.parse(localStorage.getItem("digitalDefendersProgress") || "{}")
-    progress.phisher = { ...progress.phisher, game2Score: totalScore, game2Complete: true }
-    localStorage.setItem("digitalDefendersProgress", JSON.stringify(progress))
+    updateGameProgress("phisher", "game2", {
+      completed: true,
+      score: totalScore,
+    })
 
     router.push("/missions/phisher/boss")
   }
@@ -145,6 +147,23 @@ export default function PhisherGame2Page() {
           <div className="max-w-4xl mx-auto">
             <Card className="rounded-2xl">
               <CardContent className="p-8 text-center">
+                <div className="mb-4">
+                  <AnimatedLuma
+                    emotion={totalScore >= 80 ? "dancing" : totalScore >= 60 ? "celebrating" : totalScore >= 40 ? "happy" : "worried"}
+                    message={
+                      totalScore >= 80
+                        ? "🎉 Outstanding detective!"
+                        : totalScore >= 60
+                        ? "🌟 Great work!"
+                        : totalScore >= 40
+                        ? "👍 Good effort—keep practicing!"
+                        : "💡 Review the tips and try again!"
+                    }
+                    size="large"
+                    autoAnimate
+                    className="mx-auto"
+                  />
+                </div>
                 <div className="w-20 h-20 bg-warning/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Link className="w-10 h-10 text-warning" />
                 </div>
@@ -209,8 +228,11 @@ export default function PhisherGame2Page() {
           </div>
 
           {!showResults && (
-            <LumaMascot
-              message="Scammers create fake websites that look identical to real ones, but use slightly different URLs. Look carefully at the domain names and choose the legitimate site!"
+            <AnimatedLuma
+              emotion={selectedUrl ? "focused" : "happy"}
+              message="🔎 Spot the real URL! Scammers often use tiny changes like letters or subdomains."
+              size="medium"
+              autoAnimate
               className="mb-6"
             />
           )}
@@ -288,6 +310,15 @@ export default function PhisherGame2Page() {
                 <CardTitle>Analysis Tips</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="text-center mb-4">
+                  <AnimatedLuma
+                    emotion={score > 0 ? "celebrating" : "crying"}
+                    message={score > 0 ? "✅ Nice catch! That was the legitimate site." : "⚠️ That was a fake site. Review the tips and try again!"}
+                    size="medium"
+                    autoAnimate
+                    className="mx-auto"
+                  />
+                </div>
                 <div className="space-y-2">
                   {currentSite.tips.map((tip, index) => (
                     <div key={index} className="flex items-start space-x-2">
