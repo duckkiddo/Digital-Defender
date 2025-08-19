@@ -1,0 +1,743 @@
+{
+  "MindFog Mission": [
+    {
+      "id": 1,
+      "question": "What is a common effect of too much screen time?",
+      "options": ["Eye strain", "Better posture", "Stronger vision", "Increased focus"],
+      "answer": "Eye strain",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 2,
+      "question": "Which practice can help reduce eye strain?",
+      "options": ["Following the 20-20-20 rule", "Watching more videos", "Reducing screen brightness", "Ignoring blinking"],
+      "answer": "Following the 20-20-20 rule",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 3,
+      "question": "Spending long hours on screens, especially before bed, can disrupt your?",
+      "options": ["Sleep", "Appetite", "Memory", "Taste"],
+      "answer": "Sleep",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 4,
+      "question": "Poor posture from sitting at a computer for too long can cause?",
+      "options": ["Back pain", "Improved posture", "Better circulation", "Energized muscles"],
+      "answer": "Back pain",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a healthy habit for digital wellbeing?",
+      "options": ["Taking short breaks while using devices", "Ignoring breaks to finish tasks", "Sitting without support", "Skipping sleep to game more"],
+      "answer": "Taking short breaks while using devices",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 6,
+      "question": "Blue light from screens at night can interfere with production of which hormone?",
+      "options": ["Melatonin", "Insulin", "Adrenaline", "Cortisol"],
+      "answer": "Melatonin",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 7,
+      "question": "What posture habit is important to reduce strain while using devices?",
+      "options": ["Keeping the screen at eye level", "Holding the device far above eye level", "Slouching forwards", "Looking down at your lap constantly"],
+      "answer": "Keeping the screen at eye level",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 8,
+      "question": "How often should you take a break when working on a computer?",
+      "options": ["Every 30-60 minutes", "Every 5 minutes", "Every 5 hours", "Never needed"],
+      "answer": "Every 30-60 minutes",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 9,
+      "question": "Too much screen time can make your eyes feel dry due to reduced blinking. True or False?",
+      "options": ["True", "False", "Only in daylight", "Only with mobile phones"],
+      "answer": "True",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 10,
+      "question": "Using screens for too long without breaks can cause which of these effects?",
+      "options": ["Eye strain and fatigue", "Improved eyesight", "Sharper focus", "Faster reading speed"],
+      "answer": "Eye strain and fatigue",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 11,
+      "question": "What does the '20-20-20 rule' suggest?",
+      "options": ["Every 20 minutes, look at something 20 feet away for 20 seconds", "Use screen for 20 hours and rest 20 hours", "Type 20 words per 20 minutes", "Refresh browser every 20 minutes"],
+      "answer": "Every 20 minutes, look at something 20 feet away for 20 seconds",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 12,
+      "question": "Which activity can help relieve digital eye strain?",
+      "options": ["Blinking frequently", "Keeping eyes open constantly", "Turning off room lights while using screen", "Reading on a dim screen"],
+      "answer": "Blinking frequently",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 13,
+      "question": "Regular physical exercise can help improve _____ related to screen usage.",
+      "options": ["Posture and circulation", "Typo reduction", "Screen glare", "Pixel density"],
+      "answer": "Posture and circulation",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 14,
+      "question": "What is a sign of digital burnout?",
+      "options": ["Feeling tired or stressed after screen time", "Catching up on sleep easily", "Increased immunity", "Energetic mood"],
+      "answer": "Feeling tired or stressed after screen time",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 15,
+      "question": "Which is a beneficial break activity to do between screen sessions?",
+      "options": ["Stretching or walking", "Checking social media", "Watching more TV", "Playing video games"],
+      "answer": "Stretching or walking",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 16,
+      "question": "What is a recommended distance between your eyes and a computer screen?",
+      "options": ["At least an arm's length", "10 inches", "1 foot", "Directly on your nose"],
+      "answer": "At least an arm's length",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 17,
+      "question": "Which practice can help prevent neck strain when using your phone?",
+      "options": ["Holding the device at eye level", "Looking down for long periods", "Hunching shoulders", "Looking at the screen on the floor"],
+      "answer": "Holding the device at eye level",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 18,
+      "question": "Spending too much time on social media can negatively impact:",
+      "options": ["Mental wellbeing", "Plant growth", "Your car's engine", "Weather patterns"],
+      "answer": "Mental wellbeing",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 19,
+      "question": "Which of these can help reduce glare on a screen?",
+      "options": ["Adjusting the screen angle or lighting", "Turning off all lights", "Using a reflective mirror", "Wearing sunglasses indoors"],
+      "answer": "Adjusting the screen angle or lighting",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 20,
+      "question": "What should you do to relax your eyes after prolonged screen use?",
+      "options": ["Look at distant objects", "Keep staring at the same point", "Close your eyes for a short break", "Increase screen brightness"],
+      "answer": "Close your eyes for a short break",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 21,
+      "question": "Which frequency of blinking is typical when reading from screens?",
+      "options": ["Reduced blinking", "Normal blinking rate", "Increased blinking", "Stopped blinking entirely"],
+      "answer": "Reduced blinking",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 22,
+      "question": "The 20-20-20 rule is best used to prevent ____.",
+      "options": ["Eye fatigue", "Hearing loss", "Carpal tunnel", "Improved memory"],
+      "answer": "Eye fatigue",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 23,
+      "question": "Which vitamin is often recommended for eye health?",
+      "options": ["Vitamin A", "Vitamin C", "Vitamin B-12", "Vitamin D"],
+      "answer": "Vitamin A",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 24,
+      "question": "Taking breaks from screens can improve:",
+      "options": ["Productivity and alertness", "Your car's fuel efficiency", "Random luck", "The weather"],
+      "answer": "Productivity and alertness",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 25,
+      "question": "Blue light glasses are marketed to reduce eye strain and:",
+      "options": ["Improve sleep quality", "Make you colorblind", "Decrease hearing ability", "Improve wifi speed"],
+      "answer": "Improve sleep quality",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 26,
+      "question": "Which of these is a tip for good posture while working at a computer?",
+      "options": ["Feet flat on the ground", "Crossing your legs", "Slouching in your seat", "Holding your breath"],
+      "answer": "Feet flat on the ground",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 27,
+      "question": "Excessive screen time in children can lead to:",
+      "options": ["Delayed physical development", "Increased height", "Faster running speed", "Sharper hearing"],
+      "answer": "Delayed physical development",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 28,
+      "question": "To protect eyes when outdoors after screen time, one should wear:",
+      "options": ["Sunglasses with UV protection", "A helmet", "Reading glasses", "Night vision goggles"],
+      "answer": "Sunglasses with UV protection",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 29,
+      "question": "Staring at small text for a long time may cause:",
+      "options": ["Eye strain", "Sharper vision", "Permanent focus improvement", "Speedy reading"],
+      "answer": "Eye strain",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 30,
+      "question": "Screen time before bed is best avoided because it can:",
+      "options": ["Make it harder to fall asleep", "Increase appetite", "Reduce bedroom temperature", "Fix insomnia"],
+      "answer": "Make it harder to fall asleep",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 31,
+      "question": "Software applications often have a 'dark mode' feature. This helps by:",
+      "options": ["Reducing blue light emission", "Increasing brightness", "Playing music", "Locking the computer"],
+      "answer": "Reducing blue light emission",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 32,
+      "question": "Using a screen filter or matte screen cover can help reduce ____.",
+      "options": ["Glare", "Battery usage", "CPU temperature", "Color saturation"],
+      "answer": "Glare",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 33,
+      "question": "What is an ergonomic keyboard?",
+      "options": ["A keyboard designed to reduce strain on the wrists", "A keyboard made of sponge", "A keyboard that types by itself", "A keyboard for astronauts"],
+      "answer": "A keyboard designed to reduce strain on the wrists",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 34,
+      "question": "A digital detox typically involves:",
+      "options": ["Taking a break from electronic devices", "Increasing social media use", "Watching more online videos", "Never changing your password"],
+      "answer": "Taking a break from electronic devices",
+      "tag": "digital wellbeing"
+    },
+    {
+      "id": 35,
+      "question": "True or False: Sitting on a stability ball can improve posture while using a computer.",
+      "options": ["False", "True", "Sometimes", "Never"],
+      "answer": "True",
+      "tag": "digital wellbeing"
+    }
+  ],
+  "Phisher Hunt": [
+    {
+      "id": 36,
+      "question": "Which of these is a sign of a phishing attempt?",
+      "options": ["Spelling mistakes", "Correct grammar", "Trusted domain", "Personalized message"],
+      "answer": "Spelling mistakes",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 37,
+      "question": "A phishing email often asks for what type of information?",
+      "options": ["Personal or financial details", "Photos of your pet", "Favorite songs", "Daily weather forecast"],
+      "answer": "Personal or financial details",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 38,
+      "question": "If you receive an unexpected email from your bank asking for account info, what should you do?",
+      "options": ["Verify the request through official channels", "Click the link immediately", "Forward to friends", "Reply with your password"],
+      "answer": "Verify the request through official channels",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 39,
+      "question": "Which action can help protect you from phishing?",
+      "options": ["Hovering over links to check the URL", "Clicking every link to see where it goes", "Using the same password everywhere", "Ignoring software updates"],
+      "answer": "Hovering over links to check the URL",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 40,
+      "question": "Which is a common strategy used in phishing emails?",
+      "options": ["Creating a sense of urgency", "Sending from a known contact", "Always using company logos properly", "Offering free vacations legally"],
+      "answer": "Creating a sense of urgency",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 41,
+      "question": "What should you do if you suspect an email is a phishing attempt?",
+      "options": ["Report it to your IT department or email provider", "Reply asking for more details", "Click all links", "Delete all emails"],
+      "answer": "Report it to your IT department or email provider",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 42,
+      "question": "Phishing attempts can occur over which of these channels?",
+      "options": ["Email and text messages", "Only postal mail", "Only phone calls", "Through carrier pigeons"],
+      "answer": "Email and text messages",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 43,
+      "question": "A URL that looks similar to a real site but has minor differences is likely?",
+      "options": ["A phishing site", "A well-known brand site", "An official government site", "A children's game site"],
+      "answer": "A phishing site",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 44,
+      "question": "Receiving an email with which of these attachments is often suspicious?",
+      "options": ["An executable file (.exe)", "Your monthly statement", "A photo from a known friend", "A calendar invite from your company"],
+      "answer": "An executable file (.exe)",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 45,
+      "question": "Which practice can help keep phishing scams away?",
+      "options": ["Using two-factor authentication", "Using a single password for all accounts", "Sharing passwords with colleagues", "Opening all email attachments"],
+      "answer": "Using two-factor authentication",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 46,
+      "question": "Phishers often mask malicious links by:",
+      "options": ["Displaying a legitimate-looking URL", "Never using links", "Sending only text messages", "Disabling the internet"],
+      "answer": "Displaying a legitimate-looking URL",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 47,
+      "question": "Which is a sign that an email might be a phishing scam?",
+      "options": ["It asks you to verify your password via a link", "It only contains a generic greeting", "It has no attachments", "It uses your name"],
+      "answer": "It asks you to verify your password via a link",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 48,
+      "question": "What is one way to verify an unexpected email request?",
+      "options": ["Contact the company using a known official number", "Click the link in the email", "Share it on social media", "Reply immediately"],
+      "answer": "Contact the company using a known official number",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 49,
+      "question": "Which element is commonly faked in a phishing email header?",
+      "options": ["The sender's address", "The battery level of your device", "The font color of your email client", "The operating system"],
+      "answer": "The sender's address",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 50,
+      "question": "If a website's URL starts with \"https\" and has a padlock, it is always safe. True or False?",
+      "options": ["False", "True", "Only if it's from Google", "Only on weekends"],
+      "answer": "False",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 51,
+      "question": "What is vishing?",
+      "options": ["Phishing via phone calls", "Phishing via social media", "Phishing with viruses", "Using voice recognition"],
+      "answer": "Phishing via phone calls",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 52,
+      "question": "Which of the following can be a precaution against phishing?",
+      "options": ["Using email filters", "Ignoring software updates", "Sharing passwords", "Using public Wi-Fi for sensitive transactions"],
+      "answer": "Using email filters",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 53,
+      "question": "Phishing attempts often mimic emails from:",
+      "options": ["Banks or trusted services", "Your favorite music band", "Random blog commenters", "Game developers"],
+      "answer": "Banks or trusted services",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 54,
+      "question": "A suspicious email often tells you to hurry. This is an example of:",
+      "options": ["Manipulating urgency", "Offering a legitimate deadline", "Protecting your data", "Celebrating a success"],
+      "answer": "Manipulating urgency",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 55,
+      "question": "How can you check if a link is safe without clicking it?",
+      "options": ["Hover over it to preview the URL", "Download it", "Email it to a friend", "Ignore the cursor"],
+      "answer": "Hover over it to preview the URL",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 56,
+      "question": "Multifactor authentication helps because:",
+      "options": ["It adds an extra verification step", "It disables passwords", "It uses only SMS", "It stores all passwords"],
+      "answer": "It adds an extra verification step",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 57,
+      "question": "What should you do with unsolicited attachments?",
+      "options": ["Delete or scan them for viruses", "Open them immediately", "Forward to colleagues", "Ignore antivirus warnings"],
+      "answer": "Delete or scan them for viruses",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 58,
+      "question": "Mass phishing that targets many people is called:",
+      "options": ["Bulk phishing", "Spear phishing", "Phish and chips", "Email harvesting"],
+      "answer": "Bulk phishing",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 59,
+      "question": "A phishing email might ask you to check an invoice. This is an example of:",
+      "options": ["Social engineering", "Technical support", "Routine check", "Spam filtering"],
+      "answer": "Social engineering",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 60,
+      "question": "Often phishing websites have URLs with:",
+      "options": ["Misspellings or extra words", "Proper spelling of brands", "Short URLs only", "Nothing after 'http'"],
+      "answer": "Misspellings or extra words",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 61,
+      "question": "What is 'spear phishing'?",
+      "options": ["Targeted phishing at a specific individual or group", "Phishing with fish", "Phishing by phone calls", "Mass emailing everyone"],
+      "answer": "Targeted phishing at a specific individual or group",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 62,
+      "question": "If an email address is similar but not exactly your bank's (e.g. bank-secure.com vs bank.com), this is likely:",
+      "options": ["A phishing attempt", "A new branch", "A legitimate alias", "A forwarded email"],
+      "answer": "A phishing attempt",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 63,
+      "question": "A sudden pop-up warns you your computer is infected and urges you to click. This is likely:",
+      "options": ["A scam/phishing attempt", "A genuine antivirus alert", "A system update", "An email spam filter"],
+      "answer": "A scam/phishing attempt",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 64,
+      "question": "Which of these is an action to avoid when dealing with a suspected phishing message?",
+      "options": ["Forwarding it to random people", "Reporting it to security", "Marking it as spam", "Deleting it safely"],
+      "answer": "Forwarding it to random people",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 65,
+      "question": "Many phishing emails begin with greetings like 'Dear Customer' instead of using your name. This indicates:",
+      "options": ["It might not know your name, common in phishing", "It is definitely safe", "It is only for businesses", "It is personalized email"],
+      "answer": "It might not know your name, common in phishing",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 66,
+      "question": "Which of the following makes a password safer?",
+      "options": ["Using a mix of letters, numbers, and symbols", "Using 'password123'", "Using personal information", "Writing it down on your desk"],
+      "answer": "Using a mix of letters, numbers, and symbols",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 67,
+      "question": "Seeing an unusual login attempt email from a service you didn't use is likely:",
+      "options": ["A phishing scam trying to trick you", "A genuine company notice", "Your antivirus writing you a poem", "An invitation to a party"],
+      "answer": "A phishing scam trying to trick you",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 68,
+      "question": "When using public Wi-Fi, which of these actions can reduce phishing risk?",
+      "options": ["Avoiding logging into sensitive accounts", "Sharing your passwords online", "Always clicking on pop-ups", "Disabling firewall"],
+      "answer": "Avoiding logging into sensitive accounts",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 69,
+      "question": "Two-factor authentication codes should be:",
+      "options": ["Kept secret and used only by you", "Shared with friends", "Posted on social media", "Reused for multiple accounts"],
+      "answer": "Kept secret and used only by you",
+      "tag": "scam awareness"
+    },
+    {
+      "id": 70,
+      "question": "Email spoofing is when:",
+      "options": ["The sender's address is faked", "Emails are sent by birds", "You forward every email", "Your phone charges from the email"],
+      "answer": "The sender's address is faked",
+      "tag": "scam awareness"
+    }
+  ],
+  "AI Truth Hunter": [
+    {
+      "id": 71,
+      "question": "What is a deepfake?",
+      "options": ["An AI-generated fake video", "A secure password", "A malware program", "A website scam"],
+      "answer": "An AI-generated fake video",
+      "tag": "misinformation"
+    },
+    {
+      "id": 72,
+      "question": "Which of these is an example of misinformation?",
+      "options": ["A false news story shared online", "Your school textbook", "A certified news site", "A personal diary"],
+      "answer": "A false news story shared online",
+      "tag": "misinformation"
+    },
+    {
+      "id": 73,
+      "question": "What is a common goal of misinformation?",
+      "options": ["To mislead or manipulate public opinion", "To fix computers", "To improve eyesight", "To train AI models only truthfully"],
+      "answer": "To mislead or manipulate public opinion",
+      "tag": "misinformation"
+    },
+    {
+      "id": 74,
+      "question": "Which action helps verify information online?",
+      "options": ["Checking multiple sources", "Believing sensational headlines immediately", "Forwarding without reading", "Ignoring author credentials"],
+      "answer": "Checking multiple sources",
+      "tag": "misinformation"
+    },
+    {
+      "id": 75,
+      "question": "Which is a fact-checking strategy?",
+      "options": ["Looking up information on reputable sites", "Trusting every forwarded message", "Deleting facts", "Assuming all media is false"],
+      "answer": "Looking up information on reputable sites",
+      "tag": "misinformation"
+    },
+    {
+      "id": 76,
+      "question": "If a video of a public figure seems out of character, it might be a:",
+      "options": ["Deepfake", "Software update", "Live broadcast", "Virus"],
+      "answer": "Deepfake",
+      "tag": "misinformation"
+    },
+    {
+      "id": 77,
+      "question": "Social media can spread misinformation quickly because:",
+      "options": ["Users can share content instantly", "Only experts post there", "It blocks fake content", "It only shows news"],
+      "answer": "Users can share content instantly",
+      "tag": "misinformation"
+    },
+    {
+      "id": 78,
+      "question": "Seeing the same fake news on many sites means:",
+      "options": ["It might have been copied, so check original source", "It is definitely true", "It is banned information", "It is safe to ignore"],
+      "answer": "It might have been copied, so check original source",
+      "tag": "misinformation"
+    },
+    {
+      "id": 79,
+      "question": "Which of these is a technique to verify an image?",
+      "options": ["Reverse image search", "Counting the pixels by eye", "Asking a stranger", "Using a dial-up modem"],
+      "answer": "Reverse image search",
+      "tag": "misinformation"
+    },
+    {
+      "id": 80,
+      "question": "A news article with no author and no date might indicate:",
+      "options": ["Potential unreliability", "A highly credible report", "A government announcement", "A personal blog only"],
+      "answer": "Potential unreliability",
+      "tag": "misinformation"
+    },
+    {
+      "id": 81,
+      "question": "Which of these can help identify fake accounts spreading misinformation?",
+      "options": ["Checking account age and activity", "Trusting any account with many followers", "Assuming new accounts are reliable", "Ignoring profile pictures"],
+      "answer": "Checking account age and activity",
+      "tag": "misinformation"
+    },
+    {
+      "id": 82,
+      "question": "What does it mean to 'verify facts'?",
+      "options": ["Confirm information with credible sources", "Share on all social media", "Delete the information", "Translate it to emoji"],
+      "answer": "Confirm information with credible sources",
+      "tag": "misinformation"
+    },
+    {
+      "id": 83,
+      "question": "If you see a news headline in ALL CAPS and many exclamation marks, what might this indicate?",
+      "options": ["A sensationalized or clickbait headline", "A formal academic article", "An official government release", "A trivial post"],
+      "answer": "A sensationalized or clickbait headline",
+      "tag": "misinformation"
+    },
+    {
+      "id": 84,
+      "question": "Which is a reliable way to get news?",
+      "options": ["Reading from established news organizations", "Only trusting social media posts", "Following random blogs", "Clicking every pop-up"],
+      "answer": "Reading from established news organizations",
+      "tag": "misinformation"
+    },
+    {
+      "id": 85,
+      "question": "If an image claims to show something shocking but was actually photoshopped, this is:",
+      "options": ["Misinformation", "A scientific discovery", "A fact-check", "A stock photograph"],
+      "answer": "Misinformation",
+      "tag": "misinformation"
+    },
+    {
+      "id": 86,
+      "question": "What is the purpose of fact-checking websites?",
+      "options": ["To verify claims and correct misinformation", "To create viral content", "To entertain users with memes", "To sell products"],
+      "answer": "To verify claims and correct misinformation",
+      "tag": "misinformation"
+    },
+    {
+      "id": 87,
+      "question": "A video clip is circulating with a celebrity saying something outlandish. How could you verify its authenticity?",
+      "options": ["Check if credible news outlets report it and look for original source", "Share it immediately", "Assume it's false without checking", "See if it has good video quality"],
+      "answer": "Check if credible news outlets report it and look for original source",
+      "tag": "misinformation"
+    },
+    {
+      "id": 88,
+      "question": "Why is it important to look for the original context of a quote or image?",
+      "options": ["Because it can reveal if it was manipulated or taken out of context", "Because original has prettier design", "It's required by law", "It doesn't matter for truth"],
+      "answer": "Because it can reveal if it was manipulated or taken out of context",
+      "tag": "misinformation"
+    },
+    {
+      "id": 89,
+      "question": "Which of these is a sign of a fake news website?",
+      "options": ["Sensational headlines and lack of credible author info", "Detailed source citations and editorial oversight", "Official government domain", "Publish date and journalist name"],
+      "answer": "Sensational headlines and lack of credible author info",
+      "tag": "misinformation"
+    },
+    {
+      "id": 90,
+      "question": "A digital watermark on an image helps show:",
+      "options": ["That the image is original and unedited", "The camera brand", "Number of pixels", "How many likes it has"],
+      "answer": "That the image is original and unedited",
+      "tag": "misinformation"
+    },
+    {
+      "id": 91,
+      "question": "What should you do when encountering suspicious news on social media?",
+      "options": ["Check reputable news sources or fact-checking sites", "Share it with a clickbait caption", "Delete your account", "Comment 'Fake news!' without evidence"],
+      "answer": "Check reputable news sources or fact-checking sites",
+      "tag": "misinformation"
+    },
+    {
+      "id": 92,
+      "question": "Deepfakes can also create fake audio of someone’s voice. True or False?",
+      "options": ["True", "False", "Sometimes it's just a rumor", "Only in cartoons"],
+      "answer": "True",
+      "tag": "misinformation"
+    },
+    {
+      "id": 93,
+      "question": "Which of the following is a type of unreliable information?",
+      "options": ["Clickbait articles", "Peer-reviewed journal articles", "Official press releases", "Encyclopedia entries"],
+      "answer": "Clickbait articles",
+      "tag": "misinformation"
+    },
+    {
+      "id": 94,
+      "question": "What is one danger of sharing unverified information?",
+      "options": ["It can contribute to spreading false news", "It always gets you rewarded", "It improves social media algorithms", "It corrects the news automatically"],
+      "answer": "It can contribute to spreading false news",
+      "tag": "misinformation"
+    },
+    {
+      "id": 95,
+      "question": "Which approach is least effective in combating misinformation?",
+      "options": ["Ignoring factual corrections", "Education about media literacy", "Encouraging critical thinking", "Supporting verified journalism"],
+      "answer": "Ignoring factual corrections",
+      "tag": "misinformation"
+    },
+    {
+      "id": 96,
+      "question": "Fact-checking content often includes:",
+      "options": ["Providing evidence and sources", "Just repeating rumors", "Placing adverts everywhere", "Using all caps and emojis"],
+      "answer": "Providing evidence and sources",
+      "tag": "misinformation"
+    },
+    {
+      "id": 97,
+      "question": "Which tool can help verify if a news article is legitimate?",
+      "options": ["Fact-checking websites like Snopes or official news sources", "Opening it in incognito mode", "Asking a random person on street", "A fortune teller"],
+      "answer": "Fact-checking websites like Snopes or official news sources",
+      "tag": "misinformation"
+    },
+    {
+      "id": 98,
+      "question": "Misinformation spread is most efficient when:",
+      "options": ["Content is sensational or emotionally charged", "Content is very bland", "It’s only shared among experts", "It’s only text without images"],
+      "answer": "Content is sensational or emotionally charged",
+      "tag": "misinformation"
+    },
+    {
+      "id": 99,
+      "question": "When a photo is doctored, clues include:",
+      "options": ["Inconsistent shadows or details", "Perfect symmetry", "High resolution only", "Watermarks of building logos"],
+      "answer": "Inconsistent shadows or details",
+      "tag": "misinformation"
+    },
+    {
+      "id": 100,
+      "question": "A viral social media post may go unchecked because:",
+      "options": ["People are quick to share before verifying", "It's guaranteed to be true", "Algorithms fact-check everything", "You must pay to share true content"],
+      "answer": "People are quick to share before verifying",
+      "tag": "misinformation"
+    },
+    {
+      "id": 101,
+      "question": "Which attitude helps avoid misinformation?",
+      "options": ["Being skeptical and verifying sources", "Believing every headline instantly", "Trusting only memes", "Relying on echo chambers"],
+      "answer": "Being skeptical and verifying sources",
+      "tag": "misinformation"
+    },
+    {
+      "id": 102,
+      "question": "Advertisers and fake accounts may use misinformation to:",
+      "options": ["Influence opinions or distract people", "Plan vacations", "Improve scientific research", "Reduce internet speed"],
+      "answer": "Influence opinions or distract people",
+      "tag": "misinformation"
+    },
+    {
+      "id": 103,
+      "question": "An example of misinformation is:",
+      "options": ["A manipulated photo spreading online", "A government-announced data", "Published scientific results", "A dictionary definition"],
+      "answer": "A manipulated photo spreading online",
+      "tag": "misinformation"
+    },
+    {
+      "id": 104,
+      "question": "Which is NOT an effective way to stop misinformation?",
+      "options": ["Forwarding it without checking", "Checking credibility first", "Discussing doubts with friends", "Reporting clearly false content"],
+      "answer": "Forwarding it without checking",
+      "tag": "misinformation"
+    },
+    {
+      "id": 105,
+      "question": "Which of these indicates credible information?",
+      "options": ["Multiple consistent sources with references", "Unknown blog without author", "Stories with no evidence", "Anonymous social media claims"],
+      "answer": "Multiple consistent sources with references",
+      "tag": "misinformation"
+    }
+  ]
+}

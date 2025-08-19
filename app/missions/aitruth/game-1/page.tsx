@@ -34,7 +34,22 @@ export default function AIImageDetectionGame() {
   const challenges: ImageChallenge[] = [
     {
       id: 1,
-      imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=face",
+      imageUrl: "/images/ai_gen/1.jpg",
+      isAI: true,
+      title: "Portrait Analysis",
+      description: "Look carefully at this portrait. Is this a real photograph or AI-generated?",
+      hints: [
+        "Check the eyes - are they perfectly symmetrical?",
+        "Look at the skin texture - is it too smooth or has unnatural patterns?",
+        "Examine the hair - does it flow naturally?",
+        "Check the background - are there any inconsistencies?",
+      ],
+      explanation:
+        "This is an AI-generated image. Notice the overly smooth yet hyper-detailed skin, the uniform lighting across the face, and the unnaturally sharp eyes with intense color. AI images often exaggerate symmetry, sharpness, and textures in ways that real photos do not.",
+    },
+    {
+      id: 2,
+      imageUrl: "/images/real/Queen.jpg",
       isAI: false,
       title: "Portrait Analysis",
       description: "Look carefully at this portrait. Is this a real photograph or AI-generated?",
@@ -48,8 +63,8 @@ export default function AIImageDetectionGame() {
         "This is a real photograph. Notice the natural asymmetry in the eyes, realistic skin texture with visible pores, and natural hair flow. Real photos maintain these authentic imperfections that AI often smooths over.",
     },
     {
-      id: 2,
-      imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+      id: 3,
+      imageUrl: "/images/real/real_photoland.jpg",
       isAI: false,
       title: "Landscape Verification",
       description: "Examine this landscape image. Real photograph or artificial creation?",
@@ -63,8 +78,8 @@ export default function AIImageDetectionGame() {
         "This is a real photograph. The lighting is consistent, shadows fall naturally, and all textures appear realistic. Real photos maintain physical consistency that AI sometimes struggles with.",
     },
     {
-      id: 3,
-      imageUrl: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=400&fit=crop",
+      id: 4,
+      imageUrl: "/images/real/real_cats.jpg",
       isAI: false,
       title: "Animal Authenticity",
       description: "This cute animal photo caught your attention. But is everything as it seems?",
@@ -78,9 +93,9 @@ export default function AIImageDetectionGame() {
         "This is a real photograph. The cat has proper anatomy, natural proportions, and realistic fur texture. AI-generated animals often have anatomical errors like extra limbs or distorted features.",
     },
     {
-      id: 4,
-      imageUrl: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop",
-      isAI: false,
+      id: 5,
+      imageUrl: "/images/ai_gen/ai_hand.png",
+      isAI: true,
       title: "Hand Challenge",
       description: "Hands are notoriously difficult for AI. Is this image real or generated?",
       hints: [
@@ -90,22 +105,7 @@ export default function AIImageDetectionGame() {
         "Examine the skin texture and wrinkles",
       ],
       explanation:
-        "This is a real photograph. The hands have the correct number of fingers, natural positioning, and realistic skin texture. AI notoriously struggles with generating realistic hands.",
-    },
-    {
-      id: 5,
-      imageUrl: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=600&h=400&fit=crop",
-      isAI: false,
-      title: "Crowd Scene Investigation",
-      description: "A bustling crowd scene. But look closer - is this real or artificially created?",
-      hints: [
-        "Look for repeated faces in the crowd",
-        "Check if lighting is consistent across all people",
-        "Examine clothing and accessories for duplicates",
-        "Look for people who seem to blend into each other",
-      ],
-      explanation:
-        "This is a real photograph. Each person has unique features, consistent lighting, and natural positioning. AI-generated crowds often repeat faces, create inconsistent lighting, and generate impossible crowd dynamics.",
+        "This is an AI-generated image. Notice the unnaturally clean and uniform skin without realistic pores, the tattoo appearing too sharp and perfectly aligned to the hand without natural ink spread, and the overall lighting being overly even. These small signs of perfection often reveal AI generation rather than a real photograph.",
     },
   ]
 

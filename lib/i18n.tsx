@@ -56,6 +56,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'begin-training': 'Begin Your Training',
     certificate: 'Certificate',
     chat: 'Chat',
+    quiz: 'Quiz',
   },
   ar: {
     home: 'الرئيسية',
@@ -97,6 +98,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'begin-training': 'ابدأ تدريبك',
     certificate: 'الشهادة',
     chat: 'الدردشة',
+    quiz: 'الاختبار',
   },
   zh: {
       home: '首页',
@@ -138,6 +140,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
       'begin-training': '开始你的训练',
     certificate: '证书',
     chat: '聊天',
+    quiz: '测验',
     },
   es: {
     home: 'Inicio',
@@ -179,6 +182,7 @@ const translations: { [key: string]: { [key: string]: string } } = {
     'begin-training': 'Comienza tu entrenamiento',
     certificate: 'Certificado',
     chat: 'Chat',
+    quiz: 'Cuestionario',
   },
   hi: {
     home: 'होम',

@@ -26,13 +26,28 @@ interface BossScenario {
   id: number
   title: string
   description: string
-  elements: {
-    type: "image" | "video" | "article" | "social"
-    content: string
-    imageUrl?: string
-    isAuthentic: boolean
-    suspiciousElements: string[]
-  }[]
+  elements: (
+    | {
+        type: "image"
+        content?: string
+        imageUrl: string
+        isAuthentic: boolean
+        suspiciousElements: string[]
+      }
+    | {
+        type: "video"
+        content?: string
+        videoUrl: string
+        isAuthentic: boolean
+        suspiciousElements: string[]
+      }
+    | {
+        type: "article" | "social"
+        content: string
+        isAuthentic: boolean
+        suspiciousElements: string[]
+      }
+  )[]
   correctAnalysis: boolean[]
   explanation: string
   difficulty: "Hard" | "Expert"
@@ -60,9 +75,7 @@ export default function DeepfakeBossChallenge() {
       elements: [
         {
           type: "video",
-          content:
-            "Video shows politician making controversial statements at what appears to be a private meeting. The lighting seems inconsistent and the lip-sync appears slightly off.",
-          imageUrl: "/placeholder.svg?height=300&width=500&text=Suspicious+Video+Frame",
+          videoUrl: "/videos/ai_gen/fake_newsmp4.mp4",
           isAuthentic: false,
           suspiciousElements: [
             "Inconsistent lighting on face vs background",
@@ -72,9 +85,9 @@ export default function DeepfakeBossChallenge() {
           ],
         },
         {
-          type: "article",
-          content:
-            "BREAKING: Politician Caught on Camera Making Shocking Statements! This exclusive footage obtained by our investigative team shows the true face of corruption. Share before it gets deleted!",
+          type: "image",
+          imageUrl: "/images/ai_gen/article_1_boss.png",
+
           isAuthentic: false,
           suspiciousElements: [
             "Sensational headline with excessive punctuation",
@@ -84,9 +97,9 @@ export default function DeepfakeBossChallenge() {
           ],
         },
         {
-          type: "social",
-          content:
-            "Social media post from 'anonymous whistleblower' account created 2 days ago with only this post. Claims to have 'inside information' but provides no verifiable details.",
+          type: "image",
+          imageUrl: "/images/ai_gen/social_1_boss.png",
+
           isAuthentic: false,
           suspiciousElements: [
             "Newly created account with no history",
@@ -109,9 +122,7 @@ export default function DeepfakeBossChallenge() {
       elements: [
         {
           type: "image",
-          content:
-            "Photo of 'Dr. Sarah Johnson' who allegedly discovered the breakthrough. The image shows perfect symmetry and unnaturally smooth skin texture.",
-          imageUrl: "/placeholder.svg?height=300&width=300&text=AI+Generated+Doctor",
+          imageUrl: "/images/ai_gen/image_2_boss.png",
           isAuthentic: false,
           suspiciousElements: [
             "Perfect facial symmetry (rare in real photos)",
@@ -121,17 +132,14 @@ export default function DeepfakeBossChallenge() {
           ],
         },
         {
-          type: "article",
-          content:
-            "Peer-reviewed study published in the Journal of Advanced Medicine shows 95% success rate in clinical trials. The research was conducted over 3 years with 10,000 participants across multiple countries.",
+          type: "image",
+          imageUrl: "/images/ai_gen/article_2_boss.png",
           isAuthentic: true,
           suspiciousElements: [],
         },
         {
           type: "video",
-          content:
-            "Interview with the lead researcher discussing the breakthrough. The person's movements are natural, lighting is consistent, and technical details match the published research.",
-          imageUrl: "/placeholder.svg?height=300&width=500&text=Authentic+Interview",
+          videoUrl: "/videos/ai_gen/real_newe_2_boss.mp4",
           isAuthentic: true,
           suspiciousElements: [],
         },
@@ -410,10 +418,18 @@ export default function DeepfakeBossChallenge() {
                         </h4>
                       </div>
 
-                      {element.imageUrl && (
+                      {element.type === "image" && element.imageUrl && (
                         <img
                           src={element.imageUrl || "/placeholder.svg"}
                           alt={`Evidence ${index + 1}`}
+                          className="w-full max-w-md mx-auto rounded-lg border"
+                        />
+                      )}
+
+                      {element.type === "video" && element.videoUrl && (
+                        <video
+                          src={element.videoUrl}
+                          controls
                           className="w-full max-w-md mx-auto rounded-lg border"
                         />
                       )}
