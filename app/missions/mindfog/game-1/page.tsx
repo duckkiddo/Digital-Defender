@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
+import AnimatedLuma from "@/components/animated-luma"
 
 import { Clock, Zap, ArrowRight, Target, Trophy, CheckCircle, XCircle, Lightbulb, AlertTriangle } from "lucide-react"
 import { updateGameProgress } from "@/lib/progress"
@@ -685,6 +686,16 @@ export default function MindFogGame1Page() {
                   <div className="bg-success/10 rounded-xl p-4 border border-success/20">
                     <p className="text-sm font-medium">{currentChallengeData.scenario}</p>
                   </div>
+
+                  <div className="text-center">
+                    <AnimatedLuma
+                      emotion={selectedActivities.length >= 3 ? "happy" : "focused"}
+                      message={selectedActivities.length >= 3 ? "🎯 Great picks! Keep balancing focus and stress." : "🧭 Choose activities to boost focus and lower stress."}
+                      size="medium"
+                      autoAnimate
+                      className="mx-auto"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
@@ -795,6 +806,13 @@ export default function MindFogGame1Page() {
           {gameState === "feedback" && (
             <Card className="rounded-3xl border-2 border-success/20">
               <CardContent className="p-8 text-center space-y-6">
+                <AnimatedLuma
+                  emotion={userAnswers[currentChallenge] ? "celebrating" : "worried"}
+                  message={userAnswers[currentChallenge] ? "🎉 Nice balance!" : "💡 Not quite—review tips and try again."}
+                  size="medium"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <div
                   className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto ${
                     userAnswers[currentChallenge] ? "bg-success/20" : "bg-warning/20"
@@ -849,6 +867,13 @@ export default function MindFogGame1Page() {
           {gameState === "complete" && (
             <Card className="rounded-3xl border-2 border-success/20 bg-gradient-to-br from-background to-success/5">
               <CardContent className="p-8 text-center space-y-6">
+                <AnimatedLuma
+                  emotion={score >= 400 ? "dancing" : score >= 250 ? "celebrating" : score >= 150 ? "happy" : "proud"}
+                  message={score >= 400 ? "🏆 Balance Master!" : score >= 250 ? "🌟 Great job!" : score >= 150 ? "👍 Good effort!" : "💪 You completed all challenges!"}
+                  size="large"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <div className="w-24 h-24 rounded-full bg-success/20 flex items-center justify-center mx-auto">
                   <Trophy className="w-12 h-12 text-success" />
                 </div>

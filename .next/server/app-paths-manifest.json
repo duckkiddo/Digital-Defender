@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/missions/phisher/game-1/page": "app/missions/phisher/game-1/page.js",
+  "/missions/phisher/intro/page": "app/missions/phisher/intro/page.js",
+  "/mission-control/page": "app/mission-control/page.js",
+  "/missions/phisher/game-2/page": "app/missions/phisher/game-2/page.js"
+}

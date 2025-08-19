@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { LumaMascot } from "@/components/luma-mascot"
+import AnimatedLuma from "@/components/animated-luma"
 import { Zap, Target, ArrowRight, RotateCcw } from "lucide-react"
 import { updateGameProgress } from "@/lib/progress"
 
@@ -164,9 +164,12 @@ export default function MindFogGame2Page() {
           {!gameActive && !gameComplete && (
             <>
               {/* Instructions */}
-              <LumaMascot
-                message="The MindFog Orbs are spreading! Click on healthy activities (green) to clear them and avoid distraction orbs (red). Build streaks for bonus points!"
-                className="mb-6"
+              <AnimatedLuma
+                emotion="excited"
+                message="🧠 Clear the MindFog! Tap healthy activities (green) and avoid distractions (red). Build streaks for bonus points!"
+                size="medium"
+                autoAnimate
+                className="mb-6 mx-auto"
               />
 
               <Card className="rounded-2xl mb-6">
@@ -235,30 +238,40 @@ export default function MindFogGame2Page() {
               </div>
 
               {/* Game Area */}
-              <Card className="rounded-2xl">
-                <CardContent className="p-0">
-                  <div className="relative h-96 bg-gradient-to-br from-success/5 to-primary/5 rounded-2xl overflow-hidden">
-                    {items.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => handleItemClick(item)}
-                        className={`absolute w-20 h-20 rounded-full border-2 transition-all duration-200 hover:scale-110 ${
-                          item.type === "healthy"
-                            ? "bg-success/20 border-success text-success hover:bg-success/30"
-                            : "bg-destructive/20 border-destructive text-destructive hover:bg-destructive/30"
-                        }`}
-                        style={{
-                          left: `${item.x}%`,
-                          top: `${item.y}%`,
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      >
-                        <span className="text-xs font-medium text-center px-1">{item.name}</span>
-                      </button>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="relative">
+                <Card className="rounded-2xl">
+                  <CardContent className="p-0">
+                    <div className="relative h-96 bg-gradient-to-br from-success/5 to-primary/5 rounded-2xl overflow-hidden">
+                      {items.map((item) => (
+                        <button
+                          key={item.id}
+                          onClick={() => handleItemClick(item)}
+                          className={`absolute w-20 h-20 rounded-full border-2 transition-all duration-200 hover:scale-110 ${
+                            item.type === "healthy"
+                              ? "bg-success/20 border-success text-success hover:bg-success/30"
+                              : "bg-destructive/20 border-destructive text-destructive hover:bg-destructive/30"
+                          }`}
+                          style={{
+                            left: `${item.x}%`,
+                            top: `${item.y}%`,
+                            transform: "translate(-50%, -50%)",
+                          }}
+                        >
+                          <span className="text-xs font-medium text-center px-1">{item.name}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+                <div className="absolute bottom-4 right-2 z-10">
+                  <AnimatedLuma
+                    emotion={streak >= 6 ? "dancing" : streak >= 3 ? "happy" : "focused"}
+                    message={streak >= 6 ? "🔥 On fire!" : streak >= 3 ? "⭐ Nice streak!" : "🎯 Aim for healthy picks!"}
+                    size="medium"
+                    autoAnimate
+                  />
+                </div>
+              </div>
             </>
           )}
 

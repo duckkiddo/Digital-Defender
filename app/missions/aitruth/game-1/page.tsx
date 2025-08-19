@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
+import AnimatedLuma from "@/components/animated-luma"
 import { Eye, CheckCircle, XCircle, ArrowRight, Target, Lightbulb, AlertTriangle, Camera, Zap } from "lucide-react"
 import { updateGameProgress } from "@/lib/progress"
 
@@ -214,6 +215,13 @@ export default function AIImageDetectionGame() {
                 <CardTitle className="text-2xl font-heading">Ready to Become an AI Detective?</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-6">
+                <AnimatedLuma
+                  emotion="happy"
+                  message="🕵️‍♂️ Learn to spot AI images! Watch for symmetry, textures, and odd details."
+                  size="medium"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <p className="text-lg text-muted-foreground">
                   You'll analyze {challenges.length} images and determine which are real photographs and which are
                   AI-generated.
@@ -281,6 +289,15 @@ export default function AIImageDetectionGame() {
                       style={{ maxHeight: "400px" }}
                     />
                   </div>
+                  <div className="text-center mb-2">
+                    <AnimatedLuma
+                      emotion={showHints ? "focused" : "happy"}
+                      message={showHints ? "🔍 Use the tips to inspect details closely." : "👀 Trust your detective skills!"}
+                      size="small"
+                      autoAnimate
+                      className="mx-auto"
+                    />
+                  </div>
 
                   {/* Hints Section */}
                   <div className="mb-6">
@@ -341,6 +358,13 @@ export default function AIImageDetectionGame() {
           {gameState === "feedback" && (
             <Card className="rounded-3xl border-2 border-destructive/20">
               <CardContent className="p-8 text-center space-y-6">
+                <AnimatedLuma
+                  emotion={userAnswers[currentChallenge] ? "celebrating" : "worried"}
+                  message={userAnswers[currentChallenge] ? "🎉 Sharp eyes!" : "💡 Here's what to look for next time."}
+                  size="medium"
+                  autoAnimate
+                  className="mx-auto"
+                />
                 <div
                   className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto ${
                     userAnswers[currentChallenge] ? "bg-success/20" : "bg-destructive/20"
