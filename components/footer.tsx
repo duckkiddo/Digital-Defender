@@ -40,6 +40,28 @@ export function Footer() {
           </div>
 
 
+          {/* Learn Section */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-sm">Learn</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/chat" className="text-muted-foreground hover:text-primary transition-colors">
+                  Chat
+                </Link>
+              </li>
+              <li>
+                <Link href="/quiz" className="text-muted-foreground hover:text-primary transition-colors">
+                  Quiz
+                </Link>
+              </li>
+              <li>
+                <Link href="/progress" className="text-muted-foreground hover:text-primary transition-colors">
+                  Certificate
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Pages */}
           <div className="space-y-4">
             <h3 className="font-semibold text-sm">Pages</h3>
@@ -60,11 +82,7 @@ export function Footer() {
                   Videos
                 </Link>
               </li>
-              <li>
-                <Link href="/progress" className="text-muted-foreground hover:text-primary transition-colors">
-                  Certificate
-                </Link>
-              </li>
+
             </ul>
           </div>
         </div>

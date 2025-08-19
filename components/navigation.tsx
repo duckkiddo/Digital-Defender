@@ -49,6 +49,12 @@ export function Navigation() {
             >
               {t('certificate')}
             </Link>
+            <Link
+              href="/quiz"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t('quiz')}
+            </Link>
           </nav>
           <div className="hidden md:flex items-center space-x-4">
             <LanguageToggle />
@@ -90,6 +96,12 @@ export function Navigation() {
                     className="block px-4 py-2 text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   >
                     {t('certificate')}
+                  </Link>
+                  <Link
+                    href="/quiz"
+                    className="block px-4 py-2 text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {t('quiz')}
                   </Link>
                   <div className="flex items-center space-x-4 mt-4">
                     <LanguageToggle />
